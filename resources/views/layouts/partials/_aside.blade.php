@@ -16,7 +16,8 @@
               <img src="{{ asset('images/snoopy_PNG90.png')}}" class="img-circle elevation-2" alt="User Image">
             </div> --}}
             <div class="info">
-              <a href="#" class="d-block"><i class="nav-icon fas fa-tachometer-alt"></i>  Tableau de bord</a>
+              <a href="{{route('root_path')}}" class="d-block"><i class="nav-icon fas fa-tachometer-alt"></i>  Tableau de bord</a>
+              {{-- <a href="#" class="d-block"><i class="nav-icon fas fa-tachometer-alt"></i>  Tableau de bord</a> --}}
               {{-- @if (Route::is('root_path'))
                 <a href="#" class="d-block">Accueil</a>
               @elseif(Route::is('docRef')) 
@@ -36,12 +37,12 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
-                   <li class="nav-item">
+                   {{-- <li class="nav-item">
                     <a href="{{route('root_path')}}" class="nav-link {{ set_active_route('root_path') }}">
                       <i class="fa fa-home"></i>
                       <p>Accueil</p>
                     </a>
-                  </li>
+                  </li> --}}
                   <li class="nav-item">
                     <a href="{{route('docRef')}}" class="nav-link {{ set_active_route('docRef') }}">
                       {{-- <i class="far fa-chart-bar"></i> --}}

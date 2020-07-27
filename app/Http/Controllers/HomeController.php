@@ -41,7 +41,15 @@ class HomeController extends Controller
         $traitements = DB::table('traitements')
                                 ->select('*')
                                 ->get();
-        $total=0;
+        
+        foreach ($etats as $etat){
+            $total=0;
+         $total += floatVal($etat->montantDebourse);
+        }
+                  
+                  
+     
+        
         return view('home', compact('documents', 'etats', 'controles', 'traitements', 'beneficiaires', 'documentCount', 'total'));
     }
 }
