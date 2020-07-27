@@ -42,10 +42,7 @@ class HomeController extends Controller
                                 ->select('*')
                                 ->get();
         
-        foreach ($etats as $etat){
             $total=0;
-         $total += floatVal($etat->montantDebourse);
-        }
                   
                   
      

@@ -24,9 +24,9 @@ class CreateControlesTable extends Migration
             $table->string('rapportDeReception')->nullable();
             $table->string('retenue')->nullable();
             $table->string('validation')->nullable();
-            $table->integer('document_id')->nullable();
+            $table->unsignedBigInteger('document_id');
             $table->foreign('document_id')->references('id')->on('documents');
-            $table->integer('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

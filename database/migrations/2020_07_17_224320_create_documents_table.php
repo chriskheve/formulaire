@@ -30,7 +30,7 @@ class CreateDocumentsTable extends Migration
             $table->string('categorie')->nullable();
             $table->string('montantRef')->nullable();
             $table->string('marche')->nullable();
-            $table->integer('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

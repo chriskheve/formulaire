@@ -17,9 +17,9 @@ class CreateTraitementsTable extends Migration
             $table->id();
             $table->string('par')->nullable();
             $table->string('date')->nullable();
-            $table->integer('document_id')->nullable();
+            $table->unsignedBigInteger('document_id');
             $table->foreign('document_id')->references('id')->on('documents');
-            $table->integer('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

@@ -18,9 +18,9 @@ class CreateEtatsTable extends Migration
             $table->string('montantDebourse')->nullable();
             $table->string('nonDecaisse')->nullable();
             $table->string('paiement')->nullable();
-            $table->integer('document_id')->nullable();
+            $table->unsignedBigInteger('document_id');
             $table->foreign('document_id')->references('id')->on('documents');
-            $table->integer('user_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });

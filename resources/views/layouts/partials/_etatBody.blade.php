@@ -146,14 +146,14 @@
                                                 <div class="form-group row {{ $errors->has('dateDeSignature') ? 'has-error' : '' }}">
                                                     <label for="dateDeSignature" class="col-sm-2 col-form-label ">Date de signature</label>
                                                     <div class="col-sm-10">
-                                                        <input type="date" name="dateDeSignature" class="form-control" id="montant" placeholder="{{$document->dateDeSignature}}">
+                                                        <input type="text" name="dateDeSignature" class="form-control" id="montant" placeholder="{{$document->dateDeSignature}}">
                                                         {!! $errors->first('dateDeSignature', '<span class="text-danger">:message</span>')  !!}
                                                     </div>
                                                 </div>
                                                 <div class="form-group row  ">
                                                     <label for="dateDeCloture" class="col-sm-2 col-form-label">Date de cloture</label>
                                                     <div class="col-sm-10">
-                                                        <input type="date" name="dateDeCloture" class="form-control" id="dateDeCloture" value="{{ old('dateDeCloture') }}" placeholder="{{$document->dateDeCloture}}">
+                                                        <input type="text" name="dateDeCloture" class="form-control" id="dateDeCloture" value="{{ old('dateDeCloture') }}" placeholder="{{$document->dateDeCloture}}">
                                                         {!! $errors->first('dateDeCloture', '<span class="text-danger">:message</span>')  !!}
                                                     </div>
                                                 </div>
