@@ -51,9 +51,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group row  ">
-                                        <label for="deduire" class="col-sm-2 col-form-label">Deduire</label>
+                                        <label for="deduire" class="col-sm-2 col-form-label">A déduire</label>
                                         <div class="col-sm-10">
-                                        <input type="text" name="deduire" class="form-control" id="deduire" value="{{ old('deduire') }}" placeholder="Deduire">
+                                        <input type="text" name="deduire" class="form-control" id="deduire" value="{{ old('deduire') }}" placeholder="A déduire">
                                         {!! $errors->first('deduire', '<span class="text-danger">:message</span>')  !!}
                                         </div>
                                     </div>
