@@ -26,7 +26,7 @@
                                     <div class="form-group row">
                                         <label for="date" class="col-sm-2 col-form-label">Recu le</label>
                                         <div class="col-sm-10">
-                                        <input type="date" name="date" class="form-control" id="date" placeholder="Email">
+                                        <input type="date" name="date" class="form-control" id="date" >
                                         </div>
                                     </div>
                                     <div class="form-group row {{ $errors->has('nature') ? 'has-error' : '' }}">
@@ -106,14 +106,14 @@
                                     <div class="form-group row {{ $errors->has('dateDeSignature') ? 'has-error' : '' }}">
                                         <label for="dateDeSignature" class="col-sm-2 col-form-label ">Date de signature</label>
                                         <div class="col-sm-10">
-                                            <input type="date" name="dateDeSignature" class="form-control" id="montant" placeholder="Date de signature">
+                                            <input type="date" name="dateDeSignature" class="form-control" id="montant" >
                                             {!! $errors->first('dateDeSignature', '<span class="text-danger">:message</span>')  !!}
                                         </div>
                                     </div>
                                     <div class="form-group row  ">
                                         <label for="dateDeCloture" class="col-sm-2 col-form-label">Date de cloture</label>
                                         <div class="col-sm-10">
-                                            <input type="date" name="dateDeCloture" class="form-control" id="dateDeCloture" value="{{ old('dateDeCloture') }}" placeholder="Deduire">
+                                            <input type="date" name="dateDeCloture" class="form-control" id="dateDeCloture" value="{{ old('dateDeCloture') }}" >
                                             {!! $errors->first('dateDeCloture', '<span class="text-danger">:message</span>')  !!}
                                         </div>
                                     </div>
