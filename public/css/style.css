@@ -1,18 +1,14 @@
-html{
-	height: 100%;
+div.form-group.row.ref{
+	
+    height: 19px;
 }
 
-body{ 
-	min-height:100%; 
-	padding:0; margin:0; 
-	position:relative; 
-	background: #fff !important;
-	font-family: Segoe UI !important;
+img.brand-image.img-circle.elevation-3{
+	 width: 45px;
 }
-.global{ 
-	margin-left: auto;
-	margin-top: auto;
-	height: 842px;
-	width: 595px;
-	background-color: blue;
+a.brand-link{
+	height:63px;
+}
+nav.nav-height{
+	height: 58px;
 }
